@@ -1,0 +1,19 @@
+{
+  "name": "google_drive_api_example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "electron": "^10.1.1",
+    "googleapis": "^59.0.0",
+    "mime-types": "^2.1.27",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

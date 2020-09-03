@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" /> -->
+</head>
+<style>
+    button {
+        margin: 12px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+
+    <div id="Status" style="font-size: 24px;">Login Status：</div>
+    <div id="uploadPath">
+        Path：root
+    </div>
+    <button id="Login">Login</button><br>
+    <button id="Logout">Logout</button><br>
+
+    <button id="listFolder">listFolder</button><br>
+    <button id="listFiles">listFiles</button><br>
+
+    <button id="createFolder">createFolder</button><br>
+    <button id="uplodaFile">uplodaFile</button><br>
+    <button id="downloadFile">downloadFile</button><br>
+
+
+</body>
+
+</html>
+<script src="renderer.js"></script>
