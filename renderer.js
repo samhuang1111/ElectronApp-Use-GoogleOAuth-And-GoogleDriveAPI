@@ -269,6 +269,8 @@ function onload() {
 
     downloadFileBtn.onclick = async () => {
 
+        fs.mkdirSync(app.getAppPath() + "\\downloadFolder", { recursive: true })
+
         try {
 
             let files = await listFiles();
@@ -527,7 +529,7 @@ function onload() {
 
     function downloadFile(id, name) {
 
-        const imageFolder = app.getAppPath() + "\\downloadImg"
+        const imageFolder = app.getAppPath() + "\\downloadFolder"
         const writeStream = fs.createWriteStream(imageFolder + "\\" + name)
 
         const drive = google.drive({
