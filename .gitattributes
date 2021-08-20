@@ -1,4 +1,5 @@
 # Auto detect text files and perform LF normalization
-node_modules
+
+/node_modules
 
 * text=auto
